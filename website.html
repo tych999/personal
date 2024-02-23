@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Ty Chen Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kyd7vxq.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#portfoliopart"><h2>PORTFOLIO</h2></a>
+        <a href="#aboutpart"><h2>ABOUT</h2></a>
+        <a href="#contactpart"><h2>CONTACT</h2></a>
+      </div>
+
+    <header>
+        <h1>TY CHEN</h1>
+       
+    </header>
+
+    <main>
+        <div class="container" id="portfoliopart">
+            <div class="container-image" onclick="openModal('portfolio/brain.jpg')">
+                <img src="portfolio/brain.jpg" alt="Editorial cover">
+            </div>
+
+            <div class="container-image" onclick="openModal('portfolio/building.jpg')">
+                <img src="portfolio/building.jpg" alt="Facebook banner">
+            </div>
+
+            <div class="container-image" onclick="openModal('portfolio/communism.jpg')">
+                <img src="portfolio/communism.jpg" alt="Communism poster">
+            </div>
+
+            <div class="container-image" onclick="openModal('portfolio/Meetgreet.jpg')">
+                <img src="portfolio/Meetgreet.jpg" alt="Table Tent">
+            </div>
+
+            <div class="container-image" onclick="openModal('portfolio/shenyun.jpg')">
+                <img src="portfolio/shenyun.jpg" alt="Street banner">
+            </div>
+
+            <div class="container-image" onclick="openModal('portfolio/tea.jpg')">
+                <img src="portfolio/tea.jpg" alt="Mobile website">
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-content">
+         </div>
+      
+
+
+        <div class="about" id="aboutpart">
+            <div class="myself">
+                <div class="myselfimg">
+                    <img src="portfolio/myself.jpg" alt="Picture of Ty">
+                </div>
+            </div>
+
+                <div class="myselftext">
+                    <h3> About Me</h3>
+                    <p> A former dancer with Shen Yun Performing Arts, Ty has developed a keen eye for art and design from his time performing at world-renowned venues such as New York Lincoln Center and San Francisco War Memorial just to name a few. Now an honours student at Niagara College, he brings his artistic abilities into design, creating clean and beautiful solutions for clients.</p>
+                </div>
+        </div>
+
+
+            <div class="footer" id="contactpart">
+                <div class="email">
+                    <p>tycth512@gmail.com</p>
+                </div>
+                <div class="instagram">
+                    <p>Instagram <a href="https://www.instagram.com/tc.grphcdsgn/"> @tc.grphcdsgn </a></p>
+                </div>
+                <p>Copyright 2024</p>
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>

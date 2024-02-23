@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @import url("https://use.typekit.net/kyd7vxq.css");
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #4b663c;
+    color: #282828;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 16px;
+    min-height: 100vh;
+    max-width: 100vw;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15vh; /* Adjust the width as needed */
+    height: 100%; /* Make the navigation bar cover the entire height */
+    padding-top: 7%; /* Add some padding to the top */
+  }
+  
+  .navbar a {
+    display: block;
+    color: #1d2818;
+    text-decoration: none;
+    padding: 10%;
+    text-align: left;
+  }
+  
+  .navbar a:hover {
+    background-color: #1d2818;
+  }
+  
+  .content {
+    margin-left: 100px; /* Make space for the navigation bar */
+    padding: 20px;
+  }
+
+  header {
+    min-height: 90vh;
+    text-align: right;
+    padding: 16px;
+    background-color: rgb(38, 58, 29);
+    /* background-image: url(portfolio/header.jpg); */
+    background-size: cover;
+    padding-top: 50vh;
+    padding-right: 10vh;
+    align-items: center;
+    color: white;
+  }
+
+
+  .container {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .container-image {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  
+  .container-image img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+    object-fit: cover;
+  }
+  
+  .container-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    width: 80%;
+    margin: auto;
+    display: block;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    color: #f1f1f1;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 10% 20% 10% 20%;
+    background-color: #263a1d;
+  }
+
+  .myselftext {
+    color: #fff;
+  }
+  
+  @media (min-width: 930px) {
+    .about {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .flip .myselfimg {
+      grid-column: 2 / -1;
+      grid-row-start: 1;
+    }
+  
+    .flip .myselftext {
+      grid-column: 1 / span 1;
+      grid-row-start: 1;
+      margin-top: 20vh;
+    }
+  
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    h1{
+      font-family: brother-1816, sans-serif;
+    font-weight: 100;
+    font-size: 20vh;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 15vh; /* Adjust the width as needed */
+      height: 100%; /* Make the navigation bar cover the entire height */
+      padding-top: 15%; /* Add some padding to the top */
+    }
+    
+    .navbar a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 20%;
+      text-align: left;
+    }
+    
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    h3 {
+      font-family: brother-1816, sans-serif;
+      font-weight: regular;
+      font-size: 15pt;
+      margin-top: 10vh;
+    }
+  }
+  
+  .myself {
+    max-width: 100%;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+  .footer {
+    text-align: center;
+    padding: 20%;
+  }
+
+
+  h1{
+    font-family: brother-1816, sans-serif;
+    font-weight: 100;
+    font-size: 15vh;
+    color: #e8e0ca;
+   }
+  
+
+  h2 {
+    font-family: brother-1816, sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: #e8e0ca;
+  }
+
+  h3 {
+    font-family: brother-1816, sans-serif;
+    font-weight: regular;
+    font-size: 15pt;
+    color: #e8e0ca;
+  }
+
+  p {
+    font-family: brother-1816, sans-serif;
+    font-weight: book;
+    font-size: 12pt;
+    color: #e8e0ca;
+  }
